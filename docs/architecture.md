@@ -232,11 +232,7 @@ Regularization is required (correlated features, limited \(n_{\mathrm{TD}}\)).
 ## 9. Shrinkage
 
 $$
-\Sigma_{B,\lambda}
-=
-(1-\lambda)\,\Sigma_B
-+
-\lambda\,\frac{\mathrm{tr}(\Sigma_B)}{p_B}\,I.
+\Sigma_{B,\lambda} = (1-\lambda)\,\Sigma_B + \lambda\,\frac{\mathrm{tr}(\Sigma_B)}{p_B}\,I.
 $$
 
 ---
