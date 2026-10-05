@@ -6,19 +6,20 @@
 
 ## 1. Cohort Overview
 
-- **Subjects:** $n = 46$ (28 ASD + 18 CTRL; P32 dropped due to missing age in filename)
-- **Age Range:** 1–28 years ($	ext{mean} = 13.5, 	ext{SD} = 8.2$)
-  - *Note:* ORDA is "Dataset 1" (child cohort) of Dickinson et al. (2022). The paper's "18–68" range describes the full 3-dataset study, not this specific subset.
-- **Recording:** Eyes-closed resting-state, $150	ext{ s}$, $512	ext{ Hz}$, BioSemi 64 (Cz interpolated)
-- **Exclusions:** 9 CTRL excluded due to alt-montage (`A`/`B`/`C`/`D` naming)
+* **Subjects:** $n = 46$ ($28\text{ ASD} + 18\text{ CTRL}$; P32 dropped due to missing age in filename)
+**Age Range:** 1–28 years ($\text{mean} = 13.5, \text{SD} = 8.2$)
+  * *Note:* ORDA is "Dataset 1" (child cohort) of Dickinson et al. (2022). The paper's "18–68" range describes the full 3-dataset study, not this specific subset.
+* **Recording:** Eyes-closed resting-state, $150\text{ s}$, $512\text{ Hz}$, BioSemi 64 (Cz interpolated)
+* **Exclusions:** 9 CTRL excluded due to alt-montage (`A` / `B` / `C` / `D` naming)
 
 ---
 
-## 2. Files & Paths
+## 4. Next Steps
 
-- **Manifest:** `data/external/sheffield_asd_metadata/manifest_final.csv`
-- **Features:** `results/features/sheffield_features_v02.csv` (pending)
-- **64-channel FIF:** `data/external/sheffield_asd_metadata/interpolated_64ch/*.fif`
+1. Run `extract_sheffield_v02.py` $\rightarrow$ 54-D features (SE block first).
+2. Extend to connectivity (C), graph (G), and dynamic (D) blocks.
+3. Compute NAI scoring via `extractor.score_nai_from_dataframe`.
+4. Compare with the `ds006780` development set.
 
 ---
 
