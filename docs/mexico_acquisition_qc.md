@@ -117,10 +117,11 @@ Exploratory thresholds (not optimized on group labels):
 | ASD | 0 | 0 | **31** |
 
 Median `mean_abs_uv` (harmonized):
-- TD $ pprox$ **107**  
-- ASD $ pprox$ **3131**
 
-Lowest TD examples are physiologically plausible (e.g. Part10 `mean_abs` $ pprox 11\,\mu	ext{V}$). Highest values reach tens of thousands of $\mu	ext{V}$.
+- TD ≈ 107
+- ASD ≈ 3131
+
+Lowest TD examples are physiologically plausible (e.g. Part10 `mean_abs` ≈ 11 µV). Highest values reach tens of thousands of µV.
 
 ### 6.2 Pairwise Native Audit (`42b`)
 
@@ -172,26 +173,26 @@ Mexico native data
 
 ---
 
-## 7. What This Does *Not* Justify
+## 7. What This Does Not Justify
 
-1. **Global scale correction** such as $	ext{ASD} \leftarrow 	ext{ASD} / 29$  
-   - PhysicalMaximum varies across channels and subjects.  
-   - Scaling field is similar while physical ranges differ.  
-   - Occasional ceilings (e.g. 187500) are not a single stable gain.  
+1. **Global scale correction** such as `ext(ASD) → ext(ASD) / 29`
+   - PhysicalMaximum varies across channels and subjects.
+   - Scaling field is similar while physical ranges differ.
+   - Occasional ceilings (e.g. 187500) are not a single stable gain.
    - Post-hoc constants would be unprincipled relative to NAI validation goals.
 
-2. **Calling the issue pure clipping/saturation**  
-   - Contradicted by median `frac_at_pmax = 0` for both groups.
+2. **Calling the issue pure clipping/saturation**
+   - Contradicted by median `frac_at_pmax` = 0 for both groups.
 
-3. **Proceeding to SE / connectivity / NAI on 31+31**  
-   - Absolute-power features would confound acquisition scale with biology.  
+3. **Proceeding to SE / connectivity / NAI on 31+31**
+   - Absolute-power features would confound acquisition scale with biology.
    - Even relative features remain exploratory while units/reference/hardware are unexplained.
 
-4. **Strict external validation of frozen NAI v1.0**  
-   - NAI v1.0 was built on a different system (64-ch BioSemi-class, matched discovery protocol).  
-   - Mexico differs in $n_{	ext{ch}}$, $s_{	ext{freq}}$, and native amplitude statistics.
+4. **Strict external validation of frozen NAI v1.0**
+   - NAI v1.0 was built on a different system (64-ch BioSemi-class, matched discovery protocol).
+   - Mexico differs in `n_channels`, `s_freq`, and native amplitude statistics.
 
-5. **Clinical ASD claims** from the `asd` folder alone  
+5. **Clinical ASD claims from the `asd` folder alone**
    - Pending full reconciliation with source papers (high autistic traits vs diagnosis).
 
 ---
