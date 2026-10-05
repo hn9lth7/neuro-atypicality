@@ -1,0 +1,68 @@
+{
+  "n_total": 41,
+  "n_td": 39,
+  "n_asd": 2,
+  "lambda": 0.1,
+  "rank_correlations": [
+    {
+      "metric": "D_SE",
+      "spearman_rho": 0.9743902439024393,
+      "spearman_p": 6.905233195350518e-27,
+      "mean_abs_diff": 0.09937719659385412,
+      "max_abs_diff": 0.29180323489674065
+    },
+    {
+      "metric": "D_C",
+      "spearman_rho": 0.9885017421602788,
+      "spearman_p": 1.2941378196087958e-33,
+      "mean_abs_diff": 0.063535099447841,
+      "max_abs_diff": 0.21338097504766784
+    },
+    {
+      "metric": "D_G",
+      "spearman_rho": 0.9860627177700351,
+      "spearman_p": 5.392051970888404e-32,
+      "mean_abs_diff": 0.060851611488895875,
+      "max_abs_diff": 0.23287176275410681
+    },
+    {
+      "metric": "D_D",
+      "spearman_rho": 0.9691637630662023,
+      "spearman_p": 2.4645480438500286e-25,
+      "mean_abs_diff": 0.11786008921927249,
+      "max_abs_diff": 0.4239683260809697
+    },
+    {
+      "metric": "NAI",
+      "spearman_rho": 0.9834494773519165,
+      "spearman_p": 1.5033286215297884e-30,
+      "mean_abs_diff": 0.06330145094140943,
+      "max_abs_diff": 0.18509095377561002
+    }
+  ],
+  "loo": {
+    "linear_mean": 2.583222083626384,
+    "linear_p95": 4.006400797657129,
+    "quadratic_mean": 2.6623912196935913,
+    "quadratic_p95": 4.033681188574417,
+    "spearman_rho": 0.9894736842105264,
+    "spearman_p": 1.1429651350480315e-32
+  },
+  "asd": [
+    {
+      "participant_id": "sub-11025",
+      "NAI_linear": 3.864231983115753,
+      "NAI_quadratic": 3.939379739286366,
+      "pct_LOO_linear": 92.3076923076923,
+      "pct_LOO_quadratic": 89.74358974358975
+    },
+    {
+      "participant_id": "sub-11038",
+      "NAI_linear": 1.2419207707856643,
+      "NAI_quadratic": 1.4270117245612743,
+      "pct_LOO_linear": 0.0,
+      "pct_LOO_quadratic": 0.0
+    }
+  ],
+  "note": "v1.0 default remains linear age; quadratic is robustness only."
+}

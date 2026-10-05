@@ -1,0 +1,9 @@
+{
+  "version": "v1.2_expanded",
+  "lambda": 0.1,
+  "n_td_fit": 39,
+  "n_asd_scored": 63,
+  "n_total": 102,
+  "formula": "NAI = mean(D_SE, D_C, D_G, D_D)",
+  "note": "Same math as v1.0; expanded ASD scoring; no ASD in covariance fit"
+}

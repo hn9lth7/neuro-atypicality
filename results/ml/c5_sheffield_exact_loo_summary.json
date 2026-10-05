@@ -1,0 +1,19 @@
+{
+  "n": 46,
+  "n_asd": 28,
+  "n_ctrl": 18,
+  "lambda": 0.1,
+  "auc_exact_loo": 0.49206349206349204,
+  "nai_loo_mean_asd": 2.960191238323297,
+  "nai_loo_mean_ctrl": 3.2098704665268514,
+  "blocks": {
+    "SE": 6,
+    "C": 8,
+    "G": 24,
+    "D": 16
+  },
+  "note": "Exact LOO: CTRL left-out excluded from normative fit; ASD scored against full Sheffield CTRL set.",
+  "auc_insample_same_scorer": 0.8492063492063493,
+  "nai_insample_mean_asd": 2.9601912383232976,
+  "nai_insample_mean_ctrl": 2.03550868171343
+}

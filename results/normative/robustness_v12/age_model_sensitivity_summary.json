@@ -1,0 +1,8 @@
+{
+  "lambda": 0.1,
+  "spearman_all": 0.9863387823648155,
+  "spearman_TD": 0.9831983805668016,
+  "spearman_ASD": 0.9825268817204301,
+  "td_age_max": 12.9,
+  "n_extrapolated": 2
+}

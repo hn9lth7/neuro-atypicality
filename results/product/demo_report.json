@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "stage": "score",
+  "reason": null,
+  "details": {
+    "age": 12.9,
+    "feature_dim": 54,
+    "blocks": {
+      "SE": 6,
+      "C": 8,
+      "G": 24,
+      "D": 16
+    },
+    "age_in_reference_range": true
+  },
+  "warnings": [],
+  "model_version": "v1.0",
+  "lambda": 0.1,
+  "participant_id": "sub-10003",
+  "age": 12.9,
+  "scores": {
+    "D_SE": 2.025825618006033,
+    "D_C": 2.608172469392,
+    "D_G": 2.4953327456906402,
+    "D_D": 4.00909187412185,
+    "NAI": 2.784605676802631
+  },
+  "extra": {}
+}

@@ -1,0 +1,23 @@
+{
+  "n_discovery_td": 39,
+  "n_sheffield": 46,
+  "n_asd": 28,
+  "n_ctrl": 18,
+  "lambda": 0.1,
+  "auc_discovery_to_sheffield": 0.3829365079365079,
+  "mean_nai_asd": 4.763909447907568,
+  "mean_nai_ctrl": 5.4073119051349785,
+  "block_means_asd": {
+    "D_SE": 2.516051816065119,
+    "D_C": 4.24276136721521,
+    "D_G": 4.737205930115107,
+    "D_D": 7.559618678234836
+  },
+  "block_means_ctrl": {
+    "D_SE": 2.7145235588946277,
+    "D_C": 4.886609152319802,
+    "D_G": 5.583192954238957,
+    "D_D": 8.44492195508652
+  },
+  "note": "Normative model fitted only on discovery TD; no Sheffield subject used in fit."
+}

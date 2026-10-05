@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "issues": [],
+  "warnings": [],
+  "manifest": {
+    "cohort_id": "sheffield_orda_dickinson_2022",
+    "independent_of_ds006780": true,
+    "n_asd": 28,
+    "n_td": 19,
+    "age_min": 18,
+    "age_max": 68,
+    "resting": true,
+    "eyes_condition": "closed",
+    "raw_access": "yes",
+    "srate_hz": 512,
+    "n_channels": 64,
+    "montage": "BioSemi 64 (Cz interpolated back)",
+    "reference": "common",
+    "labels_subject_level": true,
+    "overlap_with_development": false,
+    "legal_access": true,
+    "source": "ORDA/Figshare DOI 10.15131/shef.data.16840351",
+    "paper": "Dickinson, Jeste & Milne (2022), PMID 35176551",
+    "duration_sec": 150,
+    "interpolation_method": "MNE spherical spline",
+    "mean_channels_interpolated": 5.09,
+    "max_channels_interpolated": 14,
+    "n_subjects_total": 47,
+    "excluded_alt_montage": 9,
+    "generated": "2026-10-02T17:54:11.863628Z"
+  }
+}

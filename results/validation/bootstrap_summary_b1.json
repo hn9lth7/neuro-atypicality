@@ -1,0 +1,12 @@
+{
+  "lambda": 0.1,
+  "n_bootstrap": 1000,
+  "seed": 42,
+  "n_subjects": 41,
+  "n_td": 39,
+  "spearman_rho_vs_frozen_mean": 0.8437465156794426,
+  "spearman_rho_vs_frozen_median": 0.8500000000000002,
+  "spearman_rho_vs_frozen_q025": 0.7180836236933801,
+  "spearman_rho_vs_frozen_q975": 0.927378048780488,
+  "point_vs_frozen_max_abs_delta": 4.440892098500626e-16
+}

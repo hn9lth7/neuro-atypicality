@@ -1,0 +1,4 @@
+model,tn,fp,fn,tp
+logreg,22,17,24,39
+linear_svm,22,17,27,36
+rf,21,18,26,37

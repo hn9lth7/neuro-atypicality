@@ -1,0 +1,18 @@
+{
+  "n": 46,
+  "n_asd": 28,
+  "n_ctrl": 18,
+  "n_features": 55,
+  "features": "54-D + age",
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "logistic_oof_auc": 0.6011904761904762,
+  "logistic_oof_balanced_acc": 0.5813492063492063,
+  "logistic_fold_auc_mean": 0.5972222222222222,
+  "logistic_fold_auc_std": 0.09622504486493763,
+  "svm_oof_auc": 0.6031746031746033,
+  "svm_oof_balanced_acc": 0.5198412698412699,
+  "svm_fold_auc_mean": 0.6022222222222223,
+  "svm_fold_auc_std": 0.1297314414996621,
+  "note": "Nested stratified CV on Sheffield only. Pilot n=46; not external validation of NAI. No discovery labels used for training."
+}

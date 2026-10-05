@@ -1,0 +1,40 @@
+{
+  "n_td": 39,
+  "features": [
+    "alpha_rel",
+    "beta_rel",
+    "theta_rel",
+    "spectral_entropy_mean",
+    "log_theta_alpha",
+    "log_theta_beta"
+  ],
+  "lambda": 0.1,
+  "condition_number_raw": 3461.866583352238,
+  "condition_number_reg": 41.177440679336435,
+  "age_models": {
+    "alpha_rel": {
+      "intercept": -0.012793648869409063,
+      "slope": 0.014785806014691458
+    },
+    "beta_rel": {
+      "intercept": 0.003638125682462204,
+      "slope": 0.007734484754022439
+    },
+    "theta_rel": {
+      "intercept": 0.19618081303596846,
+      "slope": -0.005050173291941686
+    },
+    "spectral_entropy_mean": {
+      "intercept": 0.6741217075352136,
+      "slope": 0.006094424994142858
+    },
+    "log_theta_alpha": {
+      "intercept": 1.2509141133761552,
+      "slope": -0.1013042521641604
+    },
+    "log_theta_beta": {
+      "intercept": 1.6509952126202831,
+      "slope": -0.10007845040949859
+    }
+  }
+}

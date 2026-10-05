@@ -1,0 +1,26 @@
+========================================================================
+C1 — ML development dataset audit
+========================================================================
+CSV: results\features\features_54d_development_c1b.csv
+shape: 102 rows × 60 columns
+rows: 102
+unique participant_id: 102
+PASS  unique participant_id
+group counts (raw→mapped): {'ASD': 63, 'TD': 39}
+PASS  labels ⊆ {TD, ASD}
+TD=39  ASD=63  total_labeled=102
+age: missing=0  min=8.0  max=14.5  mean=10.666666666666666
+PASS  age complete
+expected 54 features present: 54 / 54
+PASS  all 54 expected feature names present
+feature NaN count: 0
+feature Inf count: 0
+PASS  no feature NaN
+PASS  no feature Inf
+PASS  no zero-variance features among present
+------------------------------------------------------------------------
+ISSUES (0):
+WARNINGS (0):
+RESULT: PASS
+Note: C1 does not drop rows. Any exclusion list for C2 must be written explicitly after reviewing this audit.
+========================================================================

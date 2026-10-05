@@ -1,0 +1,19 @@
+{
+  "cohort_id": "thailand_mahidol_2025",
+  "independent_of_ds006780": true,
+  "n_asd": 35,
+  "n_td": 35,
+  "age_min": 5,
+  "age_max": 12,
+  "resting": true,
+  "eyes_condition": "EO",
+  "raw_access": "pending",
+  "srate_hz": 256,
+  "n_channels": 19,
+  "montage": "BrainMaster_Discovery_24E_approx_19",
+  "reference": "unknown_until_access",
+  "labels_subject_level": true,
+  "overlap_with_development": false,
+  "legal_access": false,
+  "notes": "Candidate from published description; author data request pending. Not for ML until access confirmed."
+}

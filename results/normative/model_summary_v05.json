@@ -1,0 +1,125 @@
+{
+  "n_td": 39,
+  "blocks": {
+    "SE": {
+      "n_features": 6,
+      "rank": 6,
+      "cond_raw": 3461.866583352238,
+      "cond_reg": 41.177440679336435
+    },
+    "C": {
+      "n_features": 8,
+      "rank": 8,
+      "cond_raw": 5032.582819966727,
+      "cond_reg": 45.393496421357874
+    },
+    "G": {
+      "n_features": 24,
+      "rank": 24,
+      "cond_raw": 295732973.73692644,
+      "cond_reg": 130.84466866359185
+    }
+  },
+  "features": {
+    "SE": [
+      "alpha_rel",
+      "beta_rel",
+      "theta_rel",
+      "spectral_entropy_mean",
+      "log_theta_alpha",
+      "log_theta_beta"
+    ],
+    "C": [
+      "plv_mean_theta",
+      "plv_mean_alpha",
+      "plv_mean_beta",
+      "plv_mean_gamma",
+      "plv_median_theta",
+      "plv_median_alpha",
+      "plv_median_beta",
+      "plv_median_gamma"
+    ],
+    "G": [
+      "mean_degree_theta",
+      "mean_degree_alpha",
+      "mean_degree_beta",
+      "mean_degree_gamma",
+      "degree_cv_theta",
+      "degree_cv_alpha",
+      "degree_cv_beta",
+      "degree_cv_gamma",
+      "clustering_theta",
+      "clustering_alpha",
+      "clustering_beta",
+      "clustering_gamma",
+      "global_efficiency_theta",
+      "global_efficiency_alpha",
+      "global_efficiency_beta",
+      "global_efficiency_gamma",
+      "mean_path_length_theta",
+      "mean_path_length_alpha",
+      "mean_path_length_beta",
+      "mean_path_length_gamma",
+      "laplacian_entropy_theta",
+      "laplacian_entropy_alpha",
+      "laplacian_entropy_beta",
+      "laplacian_entropy_gamma"
+    ],
+    "G_aux_lambda2": [
+      "lambda2_theta",
+      "lambda2_alpha",
+      "lambda2_beta",
+      "lambda2_gamma"
+    ]
+  },
+  "lambda_sensitivity": [
+    {
+      "lambda": 0.01,
+      "td_mean": 2.0038840581576918,
+      "asd": [
+        4.843117661466611,
+        1.0357633027019744
+      ]
+    },
+    {
+      "lambda": 0.05,
+      "td_mean": 1.7754792397513102,
+      "asd": [
+        3.6149130427794813,
+        0.8196029278567669
+      ]
+    },
+    {
+      "lambda": 0.1,
+      "td_mean": 1.7089678585656247,
+      "asd": [
+        3.254520476762252,
+        0.7422969924877132
+      ]
+    },
+    {
+      "lambda": 0.2,
+      "td_mean": 1.680661106213957,
+      "asd": [
+        3.031348614358895,
+        0.6867618252213148
+      ]
+    },
+    {
+      "lambda": 0.3,
+      "td_mean": 1.695538704230659,
+      "asd": [
+        2.9823764375877606,
+        0.6696189922263881
+      ]
+    },
+    {
+      "lambda": 0.5,
+      "td_mean": 1.7880109699482243,
+      "asd": [
+        3.0675169804731626,
+        0.6751278103267896
+      ]
+    }
+  ]
+}

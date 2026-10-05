@@ -1,0 +1,37 @@
+{
+  "n": 102,
+  "n_asd": 63,
+  "n_td": 39,
+  "models": {
+    "logreg": {
+      "roc_auc_mean": 0.6659798534798536,
+      "roc_auc_std": 0.09971936584402662,
+      "pr_auc_mean": 0.7804483909380908,
+      "pr_auc_std": 0.0681650268385642,
+      "balanced_accuracy_mean": 0.5875457875457876,
+      "balanced_accuracy_std": 0.08778509672340924,
+      "f1_asd_mean": 0.6470138557095079,
+      "f1_asd_std": 0.11235837930254339
+    },
+    "linear_svm": {
+      "roc_auc_mean": 0.6674450549450549,
+      "roc_auc_std": 0.09771935499668395,
+      "pr_auc_mean": 0.7746119801097177,
+      "pr_auc_std": 0.06592507131074662,
+      "balanced_accuracy_mean": 0.5638278388278388,
+      "balanced_accuracy_std": 0.0795296521775412,
+      "f1_asd_mean": 0.5990574712643678,
+      "f1_asd_std": 0.1665420144239014
+    },
+    "rf": {
+      "roc_auc_mean": 0.657554945054945,
+      "roc_auc_std": 0.08274367437773741,
+      "pr_auc_mean": 0.7710695305406843,
+      "pr_auc_std": 0.053093174956077335,
+      "balanced_accuracy_mean": 0.5590201465201465,
+      "balanced_accuracy_std": 0.11997007625328461,
+      "f1_asd_mean": 0.6038091885231474,
+      "f1_asd_std": 0.19074343579604278
+    }
+  }
+}

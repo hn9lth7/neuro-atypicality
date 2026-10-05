@@ -1,0 +1,77 @@
+{
+  "n_subjects": 41,
+  "n_td": 39,
+  "n_asd": 2,
+  "CI_width_median_all": 1.5165374500922963,
+  "CI_width_mean_all": 1.6479294128443331,
+  "CI_width_median_TD": 1.5176923690715742,
+  "CI_width_median_ASD": 1.0127233620298255,
+  "CI_width_rel_median_all": 0.7346473201637013,
+  "bias_median_abs": 0.2776151663695199,
+  "bias_max_abs": 0.7154434918251358,
+  "frac_frozen_in_CI": 1.0,
+  "note": "CI = 2.5\u201397.5% quantiles of NAI under TD-reference bootstrap; subjects are scored with models fit on resampled TD only.",
+  "asd_detail": [
+    {
+      "participant_id": "sub-11025",
+      "NAI_frozen": 3.864231983115754,
+      "NAI_point": 3.864231983115754,
+      "NAI_boot_mean": 4.2839626603266,
+      "NAI_q025": 3.6390485482086343,
+      "NAI_q975": 5.155585998300931,
+      "NAI_CI_width": 1.5165374500922963,
+      "CI_width_rel": 0.3924550743119472,
+      "bias_boot_minus_frozen": 0.41973067721084645,
+      "frozen_in_CI": true
+    },
+    {
+      "participant_id": "sub-11038",
+      "NAI_frozen": 1.1803936030884703,
+      "NAI_point": 1.1803936030884703,
+      "NAI_boot_mean": 1.3754263478833313,
+      "NAI_q025": 1.152799457880326,
+      "NAI_q975": 1.6617087318476806,
+      "NAI_CI_width": 0.5089092739673546,
+      "CI_width_rel": 0.4311352354297806,
+      "bias_boot_minus_frozen": 0.195032744794861,
+      "frozen_in_CI": true
+    }
+  ],
+  "top5_widest_CI": [
+    {
+      "participant_id": "sub-10212",
+      "group": "TD",
+      "NAI_point": 3.156286142000961,
+      "NAI_CI_width": 4.129814919479017,
+      "CI_width_rel": 1.3084412292419334
+    },
+    {
+      "participant_id": "sub-10769",
+      "group": "TD",
+      "NAI_point": 3.3314690430002454,
+      "NAI_CI_width": 2.965947809365801,
+      "CI_width_rel": 0.8902822661965172
+    },
+    {
+      "participant_id": "sub-10258",
+      "group": "TD",
+      "NAI_point": 3.053248995021057,
+      "NAI_CI_width": 2.6987415247793374,
+      "CI_width_rel": 0.8838917262169524
+    },
+    {
+      "participant_id": "sub-10124",
+      "group": "TD",
+      "NAI_point": 3.098322758560819,
+      "NAI_CI_width": 2.685845770155637,
+      "CI_width_rel": 0.8668708780369999
+    },
+    {
+      "participant_id": "sub-10003",
+      "group": "TD",
+      "NAI_point": 2.784605676802631,
+      "NAI_CI_width": 2.5231953110452903,
+      "CI_width_rel": 0.9061230220368222
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "version": "v1.0",
+  "n_td": 39,
+  "n_asd": 2,
+  "lambda": 0.1,
+  "block_dims": {
+    "SE": 6,
+    "C": 8,
+    "G": 24,
+    "D": 16
+  },
+  "diagnostics": {
+    "SE": {
+      "n_features": 6,
+      "rank_reg": 6,
+      "cond_raw": 3461.866583352238,
+      "cond_reg": 41.177440679336435,
+      "lambda": 0.1
+    },
+    "C": {
+      "n_features": 8,
+      "rank_reg": 8,
+      "cond_raw": 5032.582819966727,
+      "cond_reg": 45.393496421357874,
+      "lambda": 0.1
+    },
+    "G": {
+      "n_features": 24,
+      "rank_reg": 24,
+      "cond_raw": 295732973.73692644,
+      "cond_reg": 130.84466866359185,
+      "lambda": 0.1
+    },
+    "D": {
+      "n_features": 16,
+      "rank_reg": 16,
+      "cond_raw": 215.57262348380374,
+      "cond_reg": 41.2882019884485,
+      "lambda": 0.1
+    }
+  },
+  "weights": {
+    "SE": 0.25,
+    "C": 0.25,
+    "G": 0.25,
+    "D": 0.25
+  },
+  "loo_nai_mean": 2.583222083626384,
+  "loo_nai_p95": 4.006400797657129,
+  "loo_nai_p99": 4.522941993927163
+}

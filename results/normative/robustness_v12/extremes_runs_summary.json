@@ -1,0 +1,68 @@
+{
+  "loo_p95": 4.039674747222328,
+  "loo_p99": 4.595566179747966,
+  "extreme_ids": [
+    "sub-11936",
+    "sub-2713"
+  ],
+  "age_extrapolation_ids": [
+    "sub-11325"
+  ],
+  "extreme_table": [
+    {
+      "label": "all_ASD",
+      "n": 63,
+      "median_NAI": 2.6469765019485263,
+      "mean_NAI": 3.1567181710545973,
+      "max_NAI": 16.428137797673447,
+      "n_above_LOO_P95": 7,
+      "pct_above_LOO_P95": 11.11111111111111,
+      "n_above_LOO_P99": 6,
+      "pct_above_LOO_P99": 9.523809523809524
+    },
+    {
+      "label": "wo_11936",
+      "n": 62,
+      "median_NAI": 2.6343694881479305,
+      "mean_NAI": 2.942663015786551,
+      "max_NAI": 9.907747860222392,
+      "n_above_LOO_P95": 6,
+      "pct_above_LOO_P95": 9.67741935483871,
+      "n_above_LOO_P99": 5,
+      "pct_above_LOO_P99": 8.064516129032258
+    },
+    {
+      "label": "wo_2713",
+      "n": 62,
+      "median_NAI": 2.6343694881479305,
+      "mean_NAI": 3.0478305954228584,
+      "max_NAI": 16.428137797673447,
+      "n_above_LOO_P95": 6,
+      "pct_above_LOO_P95": 9.67741935483871,
+      "n_above_LOO_P99": 5,
+      "pct_above_LOO_P99": 8.064516129032258
+    },
+    {
+      "label": "wo_11936_2713",
+      "n": 61,
+      "median_NAI": 2.621762474347335,
+      "mean_NAI": 2.828481297025308,
+      "max_NAI": 5.999190862673975,
+      "n_above_LOO_P95": 5,
+      "pct_above_LOO_P95": 8.19672131147541,
+      "n_above_LOO_P99": 4,
+      "pct_above_LOO_P99": 6.557377049180328
+    },
+    {
+      "label": "wo_extremes_and_age_extra",
+      "n": 60,
+      "median_NAI": 2.6118973210235468,
+      "mean_NAI": 2.826977798697056,
+      "max_NAI": 5.999190862673975,
+      "n_above_LOO_P95": 5,
+      "pct_above_LOO_P95": 8.333333333333332,
+      "n_above_LOO_P99": 4,
+      "pct_above_LOO_P99": 6.666666666666667
+    }
+  ]
+}

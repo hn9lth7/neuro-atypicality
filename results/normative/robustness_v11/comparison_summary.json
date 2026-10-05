@@ -1,0 +1,78 @@
+{
+  "n_total": 41,
+  "n_td": 39,
+  "n_asd": 2,
+  "lambda_ref": 0.1,
+  "shrinkage": {
+    "lambda_SE": 0.1,
+    "lambda_C": 0.1,
+    "lambda_G": 0.1,
+    "lambda_D": 0.1,
+    "lw_SE": 0.08175081908490367,
+    "lw_C": 0.1082648952108422,
+    "lw_G": 0.08740993498790695,
+    "lw_D": 0.3792193511586588
+  },
+  "rank_correlations": [
+    {
+      "metric": "D_SE",
+      "spearman_rho": 0.9994773519163765,
+      "spearman_p": 9.479691221518187e-60,
+      "mean_abs_diff": 0.035588602106226906,
+      "max_abs_diff": 0.18814264395130875
+    },
+    {
+      "metric": "D_C",
+      "spearman_rho": 0.9994773519163765,
+      "spearman_p": 9.479691221518187e-60,
+      "mean_abs_diff": 0.015741214533341943,
+      "max_abs_diff": 0.03765092165707973
+    },
+    {
+      "metric": "D_G",
+      "spearman_rho": 1.0,
+      "spearman_p": 0.0,
+      "mean_abs_diff": 0.03748428772158811,
+      "max_abs_diff": 0.1216472623282372
+    },
+    {
+      "metric": "D_D",
+      "spearman_rho": 0.970905923344948,
+      "spearman_p": 8.053396942048767e-26,
+      "mean_abs_diff": 0.3243298374064086,
+      "max_abs_diff": 1.1118769135909359
+    },
+    {
+      "metric": "NAI",
+      "spearman_rho": 0.9954703832752614,
+      "spearman_p": 1.776563284909744e-41,
+      "mean_abs_diff": 0.06412862251947145,
+      "max_abs_diff": 0.20777563001489563
+    }
+  ],
+  "loo": {
+    "lambda_mean": 2.583222083626384,
+    "lambda_p95": 4.006400797657129,
+    "lw_mean": 2.437852617195528,
+    "lw_p95": 3.76261362998002,
+    "spearman_rho": 0.9908906882591093,
+    "spearman_p": 7.97139013528335e-34
+  },
+  "asd": [
+    {
+      "participant_id": "sub-11025",
+      "NAI_lambda": 3.864231983115753,
+      "NAI_lw": 3.6564563531008574,
+      "pct_LOO_lambda": 92.3076923076923,
+      "pct_LOO_lw": 92.3076923076923
+    },
+    {
+      "participant_id": "sub-11038",
+      "NAI_lambda": 1.2419207707856643,
+      "NAI_lw": 1.1325775511506722,
+      "pct_LOO_lambda": 0.0,
+      "pct_LOO_lw": 0.0
+    }
+  ],
+  "note": "v1.0 default remains \u03bb=0.10; LW is robustness comparison only."
+}

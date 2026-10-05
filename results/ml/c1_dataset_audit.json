@@ -1,0 +1,31 @@
+{
+  "csv": "results\\features\\features_54d_development_c1b.csv",
+  "n_rows": 102,
+  "n_cols": 60,
+  "group_counts": {
+    "ASD": 63,
+    "TD": 39
+  },
+  "age_summary": {
+    "n_missing": 0,
+    "min": 8.0,
+    "max": 14.5,
+    "mean": 10.666666666666666,
+    "median": 10.8
+  },
+  "n_expected_features_present": 54,
+  "missing_features": [],
+  "unexpected_columns": [],
+  "issues": [],
+  "warnings": [],
+  "status": "PASS",
+  "expected_n_subjects_hint": 102,
+  "expected_td_hint": 39,
+  "expected_asd_hint": 63,
+  "block_dims": {
+    "SE": 6,
+    "C": 8,
+    "G": 24,
+    "D": 16
+  }
+}
