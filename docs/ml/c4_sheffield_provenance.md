@@ -10,13 +10,11 @@
 
 ---
 
-## Harmonization Pipeline
+### Harmonization Pipeline
 
-- **Step 1:** `interpolate_missing_channels` $
-ightarrow$ `interpolated/*.fif` (63 channels)
-- **Step 2:** `add_cz_back` $
-ightarrow$ `interpolated_64ch/*.fif` (64 channels, BioSemi 10-20)
-- **Step 3:** Features
+* **Step 1:** `interpolate_missing_channels` $\rightarrow$ `interpolated/*.fif` (63 channels)
+* **Step 2:** `add_cz_back` $\rightarrow$ `interpolated_64ch/*.fif` (64 channels, BioSemi 10-20)
+* **Step 3:** Features
   ```python
   preprocess_minimal(raw, notch_freqs=50.0)
   ├── raw.pick(picks="eeg", exclude="bads")
@@ -31,16 +29,16 @@ ightarrow$ SE / C / G / D feature blocks
 
 ---
 
-## Verified Parameters
+### Verified Parameters
 
 | Parameter | Value |
 | :--- | :--- |
-| **Sampling rate** | $512	ext{ Hz}$ |
+| **Sampling rate** | $512\text{ Hz}$ |
 | **EEG channels** | 64 |
 | **Reference** | Average (CAR) |
-| **Notch** | $50	ext{ Hz}$ |
-| **Bandpass** | $1	ext{--}45	ext{ Hz}$ |
-| **Duration** | $ pprox 160	ext{ s}$ |
+| **Notch** | $50\text{ Hz}$ |
+| **Bandpass** | $1\text{--}45\text{ Hz}$ |
+| **Duration** | $\approx 160\text{ s}$ |
 
 ---
 
