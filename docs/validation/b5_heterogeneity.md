@@ -1,4 +1,4 @@
-# B5 ‚Äî Contribution-Profile Heterogeneity
+# B5 Contribution-Profile Heterogeneity
 
 **Status:** CLOSED (descriptive)  
 **Input:** `results/validation/b4_block_contribution.csv` only  
