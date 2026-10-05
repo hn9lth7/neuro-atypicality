@@ -38,7 +38,7 @@ ASD subjects never enter covariance or age-model fits.
 
 ### 3.1 In-sample block / NAI distances
 
-| Metric | mean TD ($\lambda$) | mean TD (LW) | Spearman $\rho$ | mean $|\Delta|$ |
+| Metric | mean TD ($\lambda$) | mean TD (LW) | Spearman $\rho$ | mean $\lvert\Delta\rvert$ |
 | :--- | :--- | :--- | :--- | :--- |
 | $D_{\mathrm{SE}}$ | 1.428 | 1.459 | 0.999 | 0.036 |
 | $D_{\mathrm{C}}$ | 1.907 | 1.922 | 0.999 | 0.016 |
