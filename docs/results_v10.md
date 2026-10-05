@@ -1,7 +1,23 @@
 # Results — NAI v1.0
 
-**Status:** Frozen analytical results  
-**Model:** $\mathrm{NAI}_{v1.0} = \frac{1}{4}(D_{\mathrm{SE}} + D_{\mathrm{C}} + D_{\mathrm{G}} + D_{\mathrm{D}})$, $\lambda = 0.10$, TD-only normative fit
+**Status:** Frozen analytical results
+
+**Model** (TD-only normative fit, \(\lambda = 0.10\)):
+
+$$
+\mathrm{NAI}_{v1.0}
+=
+\frac{1}{4}
+\bigl(
+D_{\mathrm{SE}}
++
+D_{\mathrm{C}}
++
+D_{\mathrm{G}}
++
+D_{\mathrm{D}}
+\bigr)
+$$
 
 ---
 
