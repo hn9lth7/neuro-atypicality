@@ -20,8 +20,8 @@
 | :--- | :---: | :--- |
 | **NAI In-sample** (fit on all Sheffield CTRL) | **0.849** | Optimistic (CTRL in reference) |
 | **NAI Exact LOO** (C5) | **0.492** | Chance performance |
-| **NAI Discovery TD $\rightarrow$ Sheffield** (C6) | **0.383** | Domain shift ($	ext{NAI}_{	ext{CTRL}} > 	ext{NAI}_{	ext{ASD}}$) |
-| **Supervised Nested CV** (54-D + age) (3a) | **$\approx 0.60$** | Weak, unstable across folds |
+| **NAI Discovery TD $\rightarrow$ Sheffield** (C6) | **0.383** | Domain shift ($\mathrm{NAI}_{\mathrm{CTRL}} > \mathrm{NAI}_{\mathrm{ASD}}$) |
+| **Supervised Nested CV** (54-D + age) (3a) | $\approx 0.60$ | Weak, unstable across folds |
 
 ---
 
