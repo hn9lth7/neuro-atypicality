@@ -40,9 +40,9 @@
 
 ## 4. Key Interpretations & Scope Limits
 
-- **Discrimination:** Weak-to-moderate discrimination on the development set ($	ext{mean ROC} \approx 0.66\text{--}0.67$). High fold-to-fold variability; point estimates remain unstable at $n = 102$.
+- **Discrimination:** Weak-to-moderate discrimination on the development set (mean ROC ≈ 0.66–0.67). High fold-to-fold variability; point estimates remain unstable at n = 102.
 - **Model Complexity:** Linear models are comparable to Random Forest, showing no evidence that a complex non-linear decision boundary is required.
-- **Precision-Recall:** PR-AUC is above the ASD prevalence baseline ($ pprox 0.62$), but far from ceiling performance.
+- **Precision-Recall:** PR-AUC is above the ASD prevalence baseline (≈ 0.62), but far from ceiling performance.
 
 ### Non-Claims
 - Not clinical sensitivity or specificity.
