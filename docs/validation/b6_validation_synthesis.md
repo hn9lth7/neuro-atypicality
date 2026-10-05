@@ -36,8 +36,9 @@ It separates what is established on the discovery cohort, what is not establishe
 - Release audit and product parity work treat the research core as frozen; validation analyses (B4–B5) read frozen distances only and do not refit the model.
 
 ### 2.2 Within-Cohort Stability and Uncertainty (B1–B2)
-- **B1:** Normative / ranking procedures on the TD reference show substantial rank stability under the documented resampling protocol (reported mean rank stability $ pprox 0.844$). This supports internal numerical and ordinal coherence of the index on the discovery TD set, not external generalization.
-- **B2:** Uncertainty analyses yield wide intervals for individual scores and related quantities. Point NAI values must be read with that uncertainty; narrow clinical cut-offs are not justified by B2.
+
+* **B1:** Normative / ranking procedures on the TD reference show substantial rank stability under the documented resampling protocol (reported mean rank stability $\approx 0.844$). This supports internal numerical and ordinal coherence of the index on the discovery TD set, not external generalization.
+* **B2:** Uncertainty analyses yield wide intervals for individual scores and related quantities. Point NAI values must be read with that uncertainty; narrow clinical cut-offs are not justified by B2.
 
 ### 2.3 Block Structure (B4)
 On the full canonical set ($n = 41$):
