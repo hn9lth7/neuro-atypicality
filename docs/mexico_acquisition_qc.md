@@ -159,9 +159,9 @@ Approximate median amplitude ratio:
 
 $$\frac{\mathrm{median}(|x|)_{\mathrm{ASD}}}{\mathrm{median}(|x|)_{\mathrm{TD}}} \approx \frac{3692.44}{128.41} \approx 28.8$$
 
-**Saturation:** Not cohort-wide. Median fraction of samples at PhysicalMaximum is **0** in both groups. ASD maximum `frac_at_pmax` $ pprox 0.042$ on individual files; high-sat channel count median 0 (max 1).
+**Saturation:** Not cohort-wide. Median fraction of samples at PhysicalMaximum is 0 in both groups. ASD maximum `frac_at_pmax` ≈ 0.042 on individual files; high-sat channel count median 0 (max 1).
 
-**TD Heterogeneity:** TD is not uniformly “clean” (e.g. max `mean_abs` $ pprox 8050$; extreme PhysicalMaximum outliers exist). The pattern is:
+**TD Heterogeneity:** TD is not uniformly “clean” (e.g. max `mean_abs` ≈ 8050; extreme PhysicalMaximum outliers exist). The pattern is:
 
 ```text
 Mexico native data
