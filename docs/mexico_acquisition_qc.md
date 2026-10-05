@@ -157,7 +157,7 @@ All 62 restEO GDF files readable.
 
 Approximate median amplitude ratio:
 
-$$rac{\operatorname{median}(|x|)_{\mathrm{ASD}}}{\operatorname{median}(|x|)_{\mathrm{TD}}}  pprox rac{3692.44}{128.41}  pprox 28.8$$
+$$\frac{\mathrm{median}(|x|)_{\mathrm{ASD}}}{\mathrm{median}(|x|)_{\mathrm{TD}}} \approx \frac{3692.44}{128.41} \approx 28.8$$
 
 **Saturation:** Not cohort-wide. Median fraction of samples at PhysicalMaximum is **0** in both groups. ASD maximum `frac_at_pmax` $ pprox 0.042$ on individual files; high-sat channel count median 0 (max 1).
 
@@ -262,7 +262,7 @@ Scripts: `40`, `41`, `41a`, `41b`, `41c`, `42`, `42a`, `42b`, `42c`.
 
 ## 12. One-Paragraph Summary (for Paper / Thesis)
 
-Mexico restEO data were successfully ingested and harmonized to a 17-channel common montage at 256 Hz with average reference (62/62 structurally valid under MNE). Native GDF audits showed a large systematic amplitude-scale difference between the typically developing and high-autistic-traits subsets (median absolute amplitude ratio $ pprox 29$), present before harmonization. Cohort-wide saturation was not supported (median fraction of samples at PhysicalMaximum = 0 in both groups). Global rescaling and direct cross-group NAI external validation were therefore not justified. NAI v1.0 remains defined and frozen on the discovery cohort (`ds006780`); Mexico is retained as a documented acquisition-QC case study pending provenance clarification.
+Mexico restEO data were successfully ingested and harmonized to a 17-channel common montage at 256 Hz with average reference (62/62 structurally valid under MNE). Native GDF audits showed a large systematic amplitude-scale difference between the typically developing and high-autistic-traits subsets (median absolute amplitude ratio $\approx 29$), present before harmonization. Cohort-wide saturation was not supported (median fraction of samples at PhysicalMaximum = 0 in both groups). Global rescaling and direct cross-group NAI external validation were therefore not justified. NAI v1.0 remains defined and frozen on the discovery cohort (`ds006780`); Mexico is retained as a documented acquisition-QC case study pending provenance clarification.
 
 ---
 
