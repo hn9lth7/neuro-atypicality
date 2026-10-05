@@ -99,45 +99,39 @@ This supports research use cases (cohort characterisation, residual profiling, A
 
 ```text
 Resting-state EEG
-        │
+        |
    Preprocessing + QC
-        │
-   ┌────┴────┬──────────┬──────────┐
+        |
+   +----+----+----------+----------+
    SE        C          G          D
- spectral   PLV       graph    dynamics
-        │
+ spectral  PLV      graph     dynamics
+        |
    Subject-level aggregation
-        │
-   TD-only age models  →  residuals r
-        │
-   Σ_λ = (1−λ)Σ + λI
-        │
-   D_B = √(rᵀ Σ_λ⁻¹ r)   for B ∈ {SE, C, G, D}
-        │
+        |
+   TD-only age models  ->  residuals r
+        |
+   Sigma_lam = (1-lam)*Sigma + lam*I
+        |
+   D_B = sqrt(r^T * inv(Sigma_lam) * r)   for B in {SE,C,G,D}
+        |
    NAI = (D_SE + D_C + D_G + D_D) / 4
 ```
 
 ---
 
+### Mathematical Formulation (з нормальним рендером)
+
 ## Mathematical Formulation
 
 ### Feature vector
 
-Each subject is represented by a stacked vector
+Each subject is represented by a stacked vector:
 
 $$
-\mathbf{x}
-=
-\bigl[
-\mathbf{x}_{\mathrm{SE}},\;
-\mathbf{x}_{\mathrm{C}},\;
-\mathbf{x}_{\mathrm{G}},\;
-\mathbf{x}_{\mathrm{D}}
-\bigr]
-\in \mathbb{R}^{54}.
+\mathbf{x} = \bigl[ \mathbf{x}_{\mathrm{SE}},\; \mathbf{x}_{\mathrm{C}},\; \mathbf{x}_{\mathrm{G}},\; \mathbf{x}_{\mathrm{D}} \bigr] \in \mathbb{R}^{54}.
 $$
 
-### Age residualisation (per feature $j$ in block $B$)
+### Age residualisation (per feature \(j\) in block \(B\))
 
 On the TD training set:
 
@@ -145,53 +139,33 @@ $$
 x_j = \beta_{0j} + \beta_{1j}\,\mathrm{age} + \varepsilon_j.
 $$
 
-Residuals for any subject with age $a$:
+Residuals for any subject with age \(a\):
 
 $$
-r_j = x_j - \bigl(\hat\beta_{0j} + \hat\beta_{1j}\,a\bigr).
+r_j = x_j - \bigl(\hat{\beta}_{0j} + \hat{\beta}_{1j}\,a\bigr).
 $$
 
 ### Regularised residual covariance
 
 $$
-\Sigma_{\lambda}
-=
-(1-\lambda)\,\widehat{\mathrm{Cov}}(\mathbf{r}_{\mathrm{TD}})
-+
-\lambda\, I,
-\qquad
-\lambda = 0.10\ \text{(default)}.
+\Sigma_{\lambda} = (1-\lambda)\,\widehat{\mathrm{Cov}}(\mathbf{r}_{\mathrm{TD}}) + \lambda\, I, \qquad \lambda = 0.10\ \text{(default)}.
 $$
 
 ### Block Mahalanobis distance
 
 $$
-D_B
-=
-\sqrt{
-\mathbf{r}_B^{\mathsf T}
-\Sigma_{B,\lambda}^{-1}
-\mathbf{r}_B
-}.
+D_B = \sqrt{\mathbf{r}_B^{\mathsf{T}} \Sigma_{B,\lambda}^{-1} \mathbf{r}_B}.
 $$
 
 ### Composite index (v1.0 baseline)
 
 $$
-\boxed{
-\mathrm{NAI}_{v1.0}
-=
-\frac{1}{4}
-\bigl(
-D_{\mathrm{SE}} + D_{\mathrm{C}} + D_{\mathrm{G}} + D_{\mathrm{D}}
-\bigr)
-}
+\mathrm{NAI}_{v1.0} = \frac{1}{4}\bigl(D_{\mathrm{SE}} + D_{\mathrm{C}} + D_{\mathrm{G}} + D_{\mathrm{D}}\bigr).
 $$
 
 Weights are equal by design and are **not** optimised on ASD labels.
 
-Formal equations, shrinkage diagnostics, and non-claims:  
-**[`docs/mathematical_model.md`](docs/mathematical_model.md)**
+Formal equations: [docs/mathematical_model.md](docs/mathematical_model.md)
 
 ---
 
@@ -231,12 +205,10 @@ Architecture and contracts: **[`docs/architecture.md`](docs/architecture.md)**
 ## Composite Index
 
 $$
-\mathrm{NAI}
-=
-\frac{D_{\mathrm{SE}}+D_{\mathrm{C}}+D_{\mathrm{G}}+D_{\mathrm{D}}}{4}
+\mathrm{NAI} = \frac{D_{\mathrm{SE}}+D_{\mathrm{C}}+D_{\mathrm{G}}+D_{\mathrm{D}}}{4}.
 $$
 
-Optional relative block contributions (descriptive, not a new model):
+Optional relative block contributions (descriptive only):
 
 $$
 C_B = \frac{D_B}{D_{\mathrm{SE}}+D_{\mathrm{C}}+D_{\mathrm{G}}+D_{\mathrm{D}}}.
