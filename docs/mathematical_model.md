@@ -70,22 +70,18 @@ Age correction is performed **before** covariance estimation.
 
 ## 5. Residual Covariance
 
-Let \(R_{\mathrm{TD},B}\) be the matrix of TD residuals for block \(B\).
+Let \( R_{\mathrm{TD},B} \) be the matrix of TD residuals for block \( B \).
 
 Empirical covariance:
 
 $$
-\Sigma_B = \mathrm{Cov}\bigl(R_{\mathrm{TD},B}\bigr).
+\Sigma_B = \mathrm{Cov}(R_{\mathrm{TD},B}).
 $$
 
 Shrinkage toward a scaled identity:
 
 $$
-\Sigma_{B,\lambda}
-=
-(1-\lambda)\,\Sigma_B
-+
-\lambda\,\frac{\mathrm{tr}(\Sigma_B)}{p_B}\,I_{p_B}.
+\Sigma_{B,\lambda} = (1-\lambda)\Sigma_B + \lambda \frac{\mathrm{tr}(\Sigma_B)}{p_B} I.
 $$
 
 ---
