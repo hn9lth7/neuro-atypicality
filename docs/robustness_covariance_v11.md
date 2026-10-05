@@ -14,14 +14,14 @@ Is the Neural Atypicality Index (NAI) **rank-stable** under a change of residual
 
 ## 2. Design
 
-| Component | Fixed as in v1.0 |
-|:---|:---|
-| Cohort | 41 subjects (39 TD + 2 ASD) |
-| Feature blocks | $SE=6$, $C=8$, $G=24$, $D=16$ |
-| Age correction | Linear per feature, TD-only fit |
-| Distance | Block residual Mahalanobis $D_B$ |
-| Composite | $	ext{NAI} = rac14(D_{SE}+D_C+D_G+D_D)$ |
-| Feature extraction | Frozen tables (no re-extraction) |
+| Component        | Fixed as in v1.0                                      |
+|------------------|--------------------------------------------------------|
+| Cohort           | 41 subjects (39 TD + 2 ASD)                            |
+| Feature blocks   | SE = 6, C = 8, G = 24, D = 16                          |
+| Age correction   | Linear per feature, TD-only fit                        |
+| Distance         | Block residual Mahalanobis D_B                         |
+| Composite        | NAI = (1/4) * (D_SE + D_C + D_G + D_D)                 |
+| Feature extraction | Frozen tables (no re-extraction)                     |
 
 **Only change:** Residual covariance estimator.
 
