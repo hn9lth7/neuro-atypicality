@@ -28,24 +28,22 @@ same cohort → same features → same NAI formula
 ## Results at a Glance
 
 | Experiment | Perturbation | $\rho_{\mathrm{NAI}}$ | LOO $\rho$ | Notes |
-| :--- | :--- | :---: | :---: | :--- |
-| **Covariance** | $\lambda=0.10$ vs. Ledoit–Wolf | 0.995 | 0.991 | Highest stability; $D_D$ most sensitive ($
-ho=0.971$) |
-| **Age** | Linear vs. quadratic | 0.983 | 0.989 | Slightly larger rank movement; $D_D$ again sensitive ($
-ho=0.969$) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Covariance** | $\lambda = 0.10$ vs. Ledoit–Wolf | 0.995 | 0.991 | Highest stability; $D_{\mathrm{D}}$ most sensitive ($\rho = 0.971$) |
+| **Age** | Linear vs. quadratic | 0.983 | 0.989 | Slightly larger rank movement; $D_{\mathrm{D}}$ again sensitive ($\rho = 0.969$) |
 
-> Mean absolute NAI change was small in both cases ($ pprox 0.06$).
+> Mean absolute NAI change was small in both cases ($\approx 0.06$).
 
 ---
 
-## ASD Individuals (Descriptive Only)
+### ASD Individuals (Descriptive Only)
 
 | Subject | v1.0 NAI ($\lambda$, linear) | Cov. LW NAI | Quad. Age NAI | Empirical LOO Rank (v1.0 $\rightarrow$ alt.) |
-| :--- | :---: | :---: | :---: | :--- |
+| :--- | :--- | :--- | :--- | :--- |
 | `sub-11025` | 3.864 | 3.656 | 3.939 | 92.3rd $\rightarrow$ 92.3rd (LW); 92.3rd $\rightarrow$ 89.7th (quad) |
 | `sub-11038` | 1.242 | 1.133 | 1.427 | 0th in all settings |
 
-Both remain below LOO TD P95 under the v1.0 reference ($ pprox 4.01$). Rank shifts under quadratic age illustrate that absolute distance and empirical percentile are not interchangeable when the reference distribution also changes.
+Both remain below LOO TD P95 under the v1.0 reference ($\approx 4.01$). Rank shifts under quadratic age illustrate that absolute distance and empirical percentile are not interchangeable when the reference distribution also changes.
 
 ---
 
