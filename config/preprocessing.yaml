@@ -1,0 +1,42 @@
+version: "1.0"
+
+sampling:
+  target_sfreq_hz: 512.0
+  sfreq_tolerance_hz: 0.5
+
+filter:
+  l_freq_hz: 1.0
+  h_freq_hz: 45.0
+  fir_design: firwin
+  notch_hz: 60.0
+
+reference:
+  method: average   
+
+montage:
+  name: biosemi64
+  set_on_load: true
+  on_missing: ignore
+
+channels:
+  picks: eeg
+  min_eeg_channels: 64
+  exclude_bads: true
+
+duration:
+  min_seconds: 30.0
+
+bands_hz:
+  delta: [1.0, 4.0]
+  theta: [4.0, 8.0]
+  alpha: [8.0, 13.0]
+  beta: [13.0, 30.0]
+  gamma: [30.0, 45.0]
+
+connectivity:
+  method: plv
+  bands: [theta, alpha, beta, gamma]
+
+dynamics:
+  window_s: 10.0
+  step_s: 5.0

@@ -1,0 +1,15 @@
+.venv/
+.venv_gdf/
+.git/
+.pytest_cache/
+__pycache__/
+*.pyc
+data/
+notebooks/
+results/
+docs/
+scripts/
+tests/
+*.zip
+*.tar
+*.pdf

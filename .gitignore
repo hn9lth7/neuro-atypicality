@@ -1,0 +1,33 @@
+# Python
+.venv/
+.venv_gdf/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Data 
+data/
+notebooks/
+results/
+
+# output 
+*.fif
+*.set
+*.fdt
+*.bdf
+*.edf
+*.vhdr
+*.vmrk
+*.eeg
+
+# Archives
+*.zip
+*.tar
+*.pdf
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

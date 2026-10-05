@@ -1,0 +1,21 @@
+{
+  "l_freq_hz": 1.0,
+  "h_freq_hz": 45.0,
+  "notch_hz_default": 60.0,
+  "reference": "average",
+  "montage": "biosemi64",
+  "target_sfreq_hz": 512.0,
+  "min_eeg_channels": 64,
+  "min_duration_s": 30.0,
+  "bands_hz": {
+    "theta": [4.0, 8.0],
+    "alpha": [8.0, 13.0],
+    "beta": [13.0, 30.0],
+    "gamma": [30.0, 45.0]
+  },
+  "dynamics": {
+    "window_s": 10.0,
+    "step_s": 5.0
+  },
+  "note": "Aligned with preprocess_minimal(); EU sites should use notch_hz=50."
+}

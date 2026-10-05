@@ -1,0 +1,232 @@
+{
+  "version": "v1.0",
+  "n_td": 39,
+  "age_model": "TD-only linear",
+  "source": "export_age_models_v10.py / same fit as nai_v10_unified",
+  "blocks": {
+    "SE": {
+      "alpha_rel": {
+        "intercept": -0.012793648869409063,
+        "slope": 0.014785806014691458
+      },
+      "beta_rel": {
+        "intercept": 0.003638125682462204,
+        "slope": 0.007734484754022439
+      },
+      "theta_rel": {
+        "intercept": 0.19618081303596846,
+        "slope": -0.005050173291941686
+      },
+      "spectral_entropy_mean": {
+        "intercept": 0.6741217075352136,
+        "slope": 0.006094424994142858
+      },
+      "log_theta_alpha": {
+        "intercept": 1.2509141133761552,
+        "slope": -0.1013042521641604
+      },
+      "log_theta_beta": {
+        "intercept": 1.6509952126202831,
+        "slope": -0.10007845040949859
+      }
+    },
+    "C": {
+      "plv_mean_theta": {
+        "intercept": 0.2584630349803123,
+        "slope": 0.00387368790835983
+      },
+      "plv_mean_alpha": {
+        "intercept": 0.21768116822662104,
+        "slope": 0.011244758814218414
+      },
+      "plv_mean_beta": {
+        "intercept": 0.15864464229987857,
+        "slope": 0.007232443069727649
+      },
+      "plv_mean_gamma": {
+        "intercept": 0.11371288481735312,
+        "slope": 0.0074544411802785196
+      },
+      "plv_median_theta": {
+        "intercept": 0.2244972601214657,
+        "slope": 0.0048873476606875405
+      },
+      "plv_median_alpha": {
+        "intercept": 0.17470442718637197,
+        "slope": 0.013847751530083123
+      },
+      "plv_median_beta": {
+        "intercept": 0.12201180874595786,
+        "slope": 0.008191804693860752
+      },
+      "plv_median_gamma": {
+        "intercept": 0.07255608743054019,
+        "slope": 0.008308239716815642
+      }
+    },
+    "G": {
+      "mean_degree_theta": {
+        "intercept": 16.28317120375968,
+        "slope": 0.2440423382266696
+      },
+      "mean_degree_alpha": {
+        "intercept": 13.713913598277129,
+        "slope": 0.70841980529576
+      },
+      "mean_degree_beta": {
+        "intercept": 9.994612464892358,
+        "slope": 0.4556439133928415
+      },
+      "mean_degree_gamma": {
+        "intercept": 7.16391174349325,
+        "slope": 0.4696297943575467
+      },
+      "degree_cv_theta": {
+        "intercept": 0.1645036273611644,
+        "slope": -0.0007039981559257896
+      },
+      "degree_cv_alpha": {
+        "intercept": 0.14040364837095967,
+        "slope": 0.0030999967062819516
+      },
+      "degree_cv_beta": {
+        "intercept": 0.2423898138634552,
+        "slope": -0.005401011772948827
+      },
+      "degree_cv_gamma": {
+        "intercept": 0.28288606088157237,
+        "slope": -0.005210198783969129
+      },
+      "clustering_theta": {
+        "intercept": 0.22268855270631147,
+        "slope": 0.0035708648681448975
+      },
+      "clustering_alpha": {
+        "intercept": 0.17931391245975487,
+        "slope": 0.011441255484665057
+      },
+      "clustering_beta": {
+        "intercept": 0.13106447089255197,
+        "slope": 0.0065306085392963535
+      },
+      "clustering_gamma": {
+        "intercept": 0.08941844143797234,
+        "slope": 0.00685525729800522
+      },
+      "global_efficiency_theta": {
+        "intercept": 0.30587330391148626,
+        "slope": 0.003806407387894803
+      },
+      "global_efficiency_alpha": {
+        "intercept": 0.26693974469165077,
+        "slope": 0.010369993355881202
+      },
+      "global_efficiency_beta": {
+        "intercept": 0.2003616593762719,
+        "slope": 0.007449146211544121
+      },
+      "global_efficiency_gamma": {
+        "intercept": 0.1576706460911707,
+        "slope": 0.007151195850462781
+      },
+      "mean_path_length_theta": {
+        "intercept": 3.7359137076900333,
+        "slope": -0.037446199760873836
+      },
+      "mean_path_length_alpha": {
+        "intercept": 3.8870313272999857,
+        "slope": -0.07311316674340056
+      },
+      "mean_path_length_beta": {
+        "intercept": 5.486839889830419,
+        "slope": -0.11215161964522448
+      },
+      "mean_path_length_gamma": {
+        "intercept": 7.049640741414857,
+        "slope": -0.16404033994260214
+      },
+      "laplacian_entropy_theta": {
+        "intercept": 4.1253391696458355,
+        "slope": 0.0001700686554143496
+      },
+      "laplacian_entropy_alpha": {
+        "intercept": 4.1305285091419695,
+        "slope": -0.000586754497443726
+      },
+      "laplacian_entropy_beta": {
+        "intercept": 4.108471317768435,
+        "slope": 0.0011500901087639686
+      },
+      "laplacian_entropy_gamma": {
+        "intercept": 4.0952196110496155,
+        "slope": 0.0013978833114493005
+      }
+    },
+    "D": {
+      "mean_delta_theta": {
+        "intercept": 0.2761319535511868,
+        "slope": -0.0031417246191085737
+      },
+      "mean_delta_alpha": {
+        "intercept": 0.3110590658511243,
+        "slope": -0.006892589977360469
+      },
+      "mean_delta_beta": {
+        "intercept": 0.22380023291522508,
+        "slope": -0.0042013072316926785
+      },
+      "mean_delta_gamma": {
+        "intercept": 0.27022455414618,
+        "slope": -0.005170177216344754
+      },
+      "cv_delta_theta": {
+        "intercept": 0.11846847279799474,
+        "slope": 0.00026799234826063717
+      },
+      "cv_delta_alpha": {
+        "intercept": 0.0774518704203261,
+        "slope": 0.00943673309330113
+      },
+      "cv_delta_beta": {
+        "intercept": 0.10373191259308852,
+        "slope": 0.0010764910367129954
+      },
+      "cv_delta_gamma": {
+        "intercept": 0.08701571168646427,
+        "slope": 0.0026291041255488627
+      },
+      "mean_degree_cv_theta": {
+        "intercept": 0.15208968595650132,
+        "slope": -0.00016509195879016976
+      },
+      "mean_degree_cv_alpha": {
+        "intercept": 0.14292044313313687,
+        "slope": 0.0022245695935846715
+      },
+      "mean_degree_cv_beta": {
+        "intercept": 0.22554382028416503,
+        "slope": -0.004493829622717114
+      },
+      "mean_degree_cv_gamma": {
+        "intercept": 0.24057958890920061,
+        "slope": -0.0029740754220092818
+      },
+      "temporal_cv_degree_cv_theta": {
+        "intercept": 0.18436326202905226,
+        "slope": -0.001664636439030034
+      },
+      "temporal_cv_degree_cv_alpha": {
+        "intercept": 0.1911164912451726,
+        "slope": -0.003888718306432294
+      },
+      "temporal_cv_degree_cv_beta": {
+        "intercept": 0.08639277072943384,
+        "slope": 0.0004159921245539135
+      },
+      "temporal_cv_degree_cv_gamma": {
+        "intercept": 0.04996290028825977,
+        "slope": 0.002680558719881052
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+project:
+  name: neuro-atypicality
+  nai_version: "v1.0"
+  claim: research_use_only
+
+paths:
+  models: models/nai_v1
+  features: results/features
+  normative: results/normative
+  product_reports: results/product
+
+model:
+  bundle_dir: models/nai_v1
+  lambda: 0.10
+  reference_dataset: OpenNeuro ds006780
+  n_td_reference: 39
+
+age_reference:
+  min_years: 8.0
+  max_years: 13.0
+
+product:
+  disclaimer: >
+    Research Use Only. Not a medical device. Not for clinical diagnosis
+    of ASD or any other condition. Scores describe deviation from a
+    frozen TD pediatric normative reference (ages ~8–13).
+  api:
+    host: "0.0.0.0"
+    port: 8000
+    api_key_header: X-API-Key
+
+preprocessing: !include preprocessing.yaml   
+features: !include features.yaml

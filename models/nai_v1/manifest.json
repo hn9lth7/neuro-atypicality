@@ -1,0 +1,22 @@
+{
+  "nai_version": "v1.0",
+  "library_parity": "v1.1",
+  "feature_dim": 54,
+  "blocks": {"SE": 6, "C": 8, "G": 24, "D": 16},
+  "lambda": 0.10,
+  "age_model": "TD-only linear",
+  "weights": "equal",
+  "nai_formula": "(D_SE+D_C+D_G+D_D)/4",
+  "n_TD_reference": 39,
+  "reference_dataset": "OpenNeuro ds006780",
+  "artifacts": {
+    "covariance_SE": "covariance_SE.npy",
+    "covariance_C": "covariance_C.npy",
+    "covariance_G": "covariance_G.npy",
+    "covariance_D": "covariance_D.npy",
+    "age_models": "age_models.json",
+    "feature_schema": "feature_schema.json"
+  },
+  "parity_reference": "results/normative/nai_v10.csv",
+  "parity_criterion": "max|ΔNAI| <= 1e-6"
+}

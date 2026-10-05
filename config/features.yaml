@@ -1,0 +1,41 @@
+version: "1.0"
+feature_dim: 54
+
+blocks:
+  SE:
+    dim: 6
+    features:
+      - alpha_rel
+      - beta_rel
+      - theta_rel
+      - spectral_entropy_mean
+      - log_theta_alpha
+      - log_theta_beta
+
+  C:
+    dim: 8
+    features:
+      - plv_mean_theta
+      - plv_mean_alpha
+      - plv_mean_beta
+      - plv_mean_gamma
+      - plv_median_theta
+      - plv_median_alpha
+      - plv_median_beta
+      - plv_median_gamma
+
+  G:
+    dim: 24
+    metrics: [mean_degree, degree_cv, clustering, global_efficiency, mean_path_length, laplacian_entropy]
+    bands: [theta, alpha, beta, gamma]
+    aux_not_in_nai: [lambda2_theta, lambda2_alpha, lambda2_beta, lambda2_gamma]
+
+  D:
+    dim: 16
+    metrics: [mean_delta, cv_delta, mean_degree_cv, temporal_cv_degree_cv]
+    bands: [theta, alpha, beta, gamma]
+
+nai:
+  formula: "(D_SE + D_C + D_G + D_D) / 4"
+  weights: equal
+  lambda_default: 0.10
