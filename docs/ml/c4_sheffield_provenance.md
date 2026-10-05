@@ -23,8 +23,7 @@
   ├── raw.filter(l_freq=1.0, h_freq=45.0)
   └── raw.set_eeg_reference("average", projection=False)
   ```
-  $
-ightarrow$ SE / C / G / D feature blocks
+$\rightarrow$ SE / C / G / D feature blocks
 - **Step 4:** `score_nai_from_dataframe(td_label="CTRL", lam=0.10)`
 
 ---
