@@ -84,9 +84,9 @@ not establish causal or biological relationships.
 ### 2.4 Dominant Block and Concentration
 
 | Metric | Value |
-| :--- | :---: |
-| **Dominant block = D** | **41 / 41** ($\mathrm{TD}\ 39/39$, $\mathrm{ASD}\ 2/2$) |
-| **$\max C_B \ge 0.40$** | **19 / 41** ($ pprox 46\%$) |
+| :--- | :--- |
+| **Dominant block = D** | **41 / 41** (TD 39 / 39, ASD 2 / 2) |
+| $\max C_B \ge 0.40$ | **19 / 41** ($\approx 46\%$) |
 
 ---
 
@@ -140,6 +140,6 @@ ho$ documented** | Yes |
 
 ---
 
-## 7. Next Step — B5 Heterogeneity
+### 7. Next Step — B5 Heterogeneity
 
 Study subject-level profiles $\mathbf{C}_i = (C_{\mathrm{SE}}, C_{\mathrm{C}}, C_{\mathrm{G}}, C_{\mathrm{D}})$: dispersion of $C_B$, distribution of max contribution, multi-block vs. concentrated subjects, and whether high-NAI subjects share one contribution pattern — still without changing NAI v1.0.
