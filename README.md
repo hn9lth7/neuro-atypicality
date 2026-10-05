@@ -98,28 +98,52 @@ This supports research use cases (cohort characterisation, residual profiling, A
 ## Method at a Glance
 
 ```text
-                    Resting-state EEG
-                            |
-                     Preprocessing + QC
-                            |
-          +--------+--------+--------+--------+
-          |        |        |        |        |
-         SE        C        G        D
-      spectral    PLV     graph   dynamics
-          |        |        |        |
-          +--------+--------+--------+
-                            |
-                 Subject-level aggregation
-                            |
-              TD-only age models -> residuals r
-                            |
-           Sigma_lam = (1-lam)*Sigma + lam*I
-                            |
-      D_B = sqrt(r^T * inv(Sigma_lam) * r)
-                 for B in {SE, C, G, D}
-                            |
-         NAI = (D_SE + D_C + D_G + D_D) / 4
+Resting-state EEG
+        |
+ Preprocessing + QC
+        |
+   +----+----+----+----+
+   |    |    |    |
+  SE    C    G    D
+        |
+ Subject-level aggregation
+        |
+ TD-only age models -> residuals
+        |
+ Regularised residual covariance
+        |
+ Block Mahalanobis distances
+        |
+ Equal-weight NAI
 ```
+
+Age residual (TD fit):
+
+$$
+x_j = \beta_{0j} + \beta_{1j}\,\mathrm{age} + \varepsilon_j
+$$
+
+$$
+r_j = x_j - \bigl(\hat{\beta}_{0j} + \hat{\beta}_{1j}\,a\bigr)
+$$
+
+Shrinkage covariance:
+
+$$
+\Sigma_{\lambda} = (1-\lambda)\,\Sigma + \lambda\, I,\qquad \lambda = 0.10
+$$
+
+Block distance:
+
+$$
+D_B = \sqrt{\mathbf{r}_B^{\mathsf{T}}\Sigma_{B,\lambda}^{-1}\mathbf{r}_B}
+$$
+
+Composite index:
+
+$$
+\mathrm{NAI} = \frac{1}{4}\bigl(D_{\mathrm{SE}}+D_{\mathrm{C}}+D_{\mathrm{G}}+D_{\mathrm{D}}\bigr)
+$$
 
 ---
 
