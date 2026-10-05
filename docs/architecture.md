@@ -219,25 +219,25 @@ Age correction **precedes** covariance estimation.
 
 ## 8. Residual Covariance
 
-With $R_{\text{TD},B}$ the matrix of TD residuals:
+With \(R_{\mathrm{TD},B}\) the matrix of TD residuals:
 
-$$\Sigma_B = \operatorname{Cov}(R_{\text{TD},B}).$$
+$$
+\Sigma_B = \mathrm{Cov}\bigl(R_{\mathrm{TD},B}\bigr).
+$$
 
-Regularization is required (correlated features, limited $n_{\text{TD}}$).
+Regularization is required (correlated features, limited \(n_{\mathrm{TD}}\)).
 
 ---
 
 ## 9. Shrinkage
 
-$$\Sigma_{B,\lambda} = (1-\lambda)\,\Sigma_B + \lambda\,\frac{\operatorname{tr}(\Sigma_B)}{p_B}\,I$$
-
-Default:
-
-$$\lambda = 0.10$$
-
-Sensitivity grid (shared by all blocks):
-
-$$\lambda \in \{0.01,\,0.05,\,0.10,\,0.20,\,0.30,\,0.50\}$$
+$$
+\Sigma_{B,\lambda}
+=
+(1-\lambda)\,\Sigma_B
++
+\lambda\,\frac{\mathrm{tr}(\Sigma_B)}{p_B}\,I.
+$$
 
 ---
 
