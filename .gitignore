@@ -9,7 +9,8 @@ __pycache__/
 # Data 
 data/
 notebooks/
-results/
+*.npy
+*.npz
 
 # output 
 *.fif
