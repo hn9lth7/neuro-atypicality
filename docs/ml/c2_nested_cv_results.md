@@ -1,4 +1,4 @@
-# C2 ‚Äî Nested CV Baseline (Development Set)
+# C2 Nested CV Baseline (Development Set)
 
 **Status:** CLOSED  
 **Track:** C (supervised ASD/TD ML)  
