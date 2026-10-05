@@ -7,7 +7,7 @@
 ## 1. Cohort Overview
 
 * **Subjects:** $n = 46$ ($28\text{ ASD} + 18\text{ CTRL}$; P32 dropped due to missing age in filename)
-**Age Range:** 1–28 years ($\text{mean} = 13.5, \text{SD} = 8.2$)
+* **Age Range:** 1–28 years ($\text{mean} = 13.5, \text{SD} = 8.2$)
   * *Note:* ORDA is "Dataset 1" (child cohort) of Dickinson et al. (2022). The paper's "18–68" range describes the full 3-dataset study, not this specific subset.
 * **Recording:** Eyes-closed resting-state, $150\text{ s}$, $512\text{ Hz}$, BioSemi 64 (Cz interpolated)
 * **Exclusions:** 9 CTRL excluded due to alt-montage (`A` / `B` / `C` / `D` naming)
