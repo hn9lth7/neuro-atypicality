@@ -16,13 +16,13 @@
 
 ## 2. Sheffield ORDA Headline Findings
 
-- **Cohort:** $n = 46$ (28 ASD + 18 CTRL)
-- **Primary Metrics:** $	ext{AUC} = 0.849$, $95\%\text{ CI } [0.720, 0.953]$, Cohen's $d = 1.22$, Permutation $p < 10^{-4}$
-- **Age-Adjusted AUC:** $0.863$
-- **Harmonization Audit:** **CLOSED** ($50	ext{ Hz}$ notch, CAR, 64-ch, $512	ext{ Hz}$)
-- **Limitations:** Duration mismatch vs. discovery cohort
-- **LOO Stability:** Sensitivity only; exact LOO pending
-- **Feature Block Behavior:** D-block dominance (exploratory)
+* **Cohort:** $n = 46$ ($28\text{ ASD} + 18\text{ CTRL}$)
+* **Primary Metrics:** $\text{AUC} = 0.849$, 95% CI, Cohen's $d = 1.22$, Permutation $p < 10^{-4}$
+* **Age-Adjusted AUC:** $0.863$
+* **Harmonization Audit:** **CLOSED** ($50\text{ Hz}$ notch, CAR, 64-ch, $512\text{ Hz}$)
+* **Limitations:** Duration mismatch vs. discovery cohort
+* **LOO Stability:** Sensitivity only; exact LOO pending
+* **Feature Block Behavior:** D-block dominance (exploratory)
 
 ---
 
