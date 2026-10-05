@@ -38,12 +38,12 @@ ASD subjects never enter covariance or age-model fits.
 
 ### 3.1 In-sample block / NAI distances
 
-| Metric | mean TD (λ) | mean TD (LW) | Spearman ρ | mean \|Δ\| |
-|--------|-------------|--------------|------------|------------|
-| \(D_{SE}\) | 1.428 | 1.459 | 0.999 | 0.036 |
-| \(D_C\) | 1.907 | 1.922 | 0.999 | 0.016 |
-| \(D_G\) | 2.074 | 2.111 | 1.000 | 0.037 |
-| \(D_D\) | 3.359 | 3.091 | 0.971 | 0.324 |
+| Metric | mean TD ($\lambda$) | mean TD (LW) | Spearman $\rho$ | mean $|\Delta|$ |
+| :--- | :--- | :--- | :--- | :--- |
+| $D_{\mathrm{SE}}$ | 1.428 | 1.459 | 0.999 | 0.036 |
+| $D_{\mathrm{C}}$ | 1.907 | 1.922 | 0.999 | 0.016 |
+| $D_{\mathrm{G}}$ | 2.074 | 2.111 | 1.000 | 0.037 |
+| $D_{\mathrm{D}}$ | 3.359 | 3.091 | 0.971 | 0.324 |
 | **NAI** | **2.192** | **2.146** | **0.995** | **0.064** |
 
 ### 3.2 Ledoit–Wolf shrinkage intensity
