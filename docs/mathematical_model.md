@@ -70,7 +70,7 @@ Age correction is performed **before** covariance estimation.
 
 ## 5. Residual Covariance
 
-Let \( R_{\mathrm{TD},B} \) be the matrix of TD residuals for block \( B \).
+Let $R_{\mathrm{TD},B}$ be the matrix of TD residuals for block $B$.
 
 Empirical covariance:
 
