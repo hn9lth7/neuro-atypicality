@@ -98,23 +98,27 @@ This supports research use cases (cohort characterisation, residual profiling, A
 ## Method at a Glance
 
 ```text
-Resting-state EEG
-        |
-   Preprocessing + QC
-        |
-   +----+----+----------+----------+
-   SE        C          G          D
- spectral  PLV      graph     dynamics
-        |
-   Subject-level aggregation
-        |
-   TD-only age models  ->  residuals r
-        |
-   Sigma_lam = (1-lam)*Sigma + lam*I
-        |
-   D_B = sqrt(r^T * inv(Sigma_lam) * r)   for B in {SE,C,G,D}
-        |
-   NAI = (D_SE + D_C + D_G + D_D) / 4
+                    Resting-state EEG
+                            |
+                     Preprocessing + QC
+                            |
+          +--------+--------+--------+--------+
+          |        |        |        |        |
+         SE        C        G        D
+      spectral    PLV     graph   dynamics
+          |        |        |        |
+          +--------+--------+--------+
+                            |
+                 Subject-level aggregation
+                            |
+              TD-only age models -> residuals r
+                            |
+           Sigma_lam = (1-lam)*Sigma + lam*I
+                            |
+      D_B = sqrt(r^T * inv(Sigma_lam) * r)
+                 for B in {SE, C, G, D}
+                            |
+         NAI = (D_SE + D_C + D_G + D_D) / 4
 ```
 
 ---
